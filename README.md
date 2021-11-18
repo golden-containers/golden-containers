@@ -2,6 +2,15 @@
 
 The goal of this project is to leverage GitHub Actions to publicly rebuild essential containers, using only base containers from Golden Containers.  Containers are labeled with the GHA run that built them.
 
+## TODO
+
+* Automatic tag and distro discovery
+  * Via versions.json
+  * Via walking directories
+  * Via version in Dockerfile
+* Rewrite artifact downloads to use cached GitHub Packages URLs
+* Add smoke tests for built images
+
 ## Build Status
 
 #### alpine
